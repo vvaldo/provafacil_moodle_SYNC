@@ -1,7 +1,7 @@
 <?php
 require_once('../../config.php'); // Inclua a configuração do Moodle, se necessário.
 require_once($CFG->libdir . '/filelib.php'); // Biblioteca para usar a classe curl
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 require_login();
 $candidate_key = optional_param('candidate_key', null, PARAM_RAW);
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['enrollments'])) {
 
 function local_provafacil_enroll_student($candidate_key, $academic_key) {
     $url = 'https://unisced.provafacilnaweb.com.br/unisced/api/v1/str/rest/api/academicxcandidate/';
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+    $apitoken = '#apitoken';
     $data = [
         'candidate' => $candidate_key,
         'academic' => $academic_key,
