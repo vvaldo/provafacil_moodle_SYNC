@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/provafacil_sync/db" VERSION="20241120" COMMENT="XMLDB file for local_provafacil_sync plugin"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_provafacil_sync" COMMENT="Armazenamento de dados de sincronização com a API da Prova Fácil">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" UNSIGNED="true" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="key" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="last_update" TYPE="datetime" NOTNULL="true"/>
+        <FIELD NAME="updated_by" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="legacy_key" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="creation_date" TYPE="datetime" NOTNULL="true"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="short_name" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="document_id" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="ref_code" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="enrollment_code" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="email" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="client" TYPE="char" LENGTH="255" NOTNULL="true"/>
+        <FIELD NAME="user" TYPE="int" LENGTH="10" UNSIGNED="true" NOTNULL="true"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="key_idx" UNIQUE="true" FIELDS="key"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,23 @@
+<?php
+$string['pluginname'] = 'Prova Fácil Sync';
+$string['apitoken'] = 'API Token';
+$string['apitokendesc'] = 'Token da API do Prova Fácil.';
+$string['apiurl'] = 'API URL';
+$string['apiurldesc'] = 'URL base da API do Prova Fácil.';
+$string['syncbutton'] = 'Sincronizar Estudantes';
+$string['syncedsuccess'] = 'Estudantes sincronizados com sucesso!';
+$string['syncfailed'] = 'Erro ao sincronizar estudantes.';
+$string['enrollstudent'] = 'Inscrever Estudante na Disciplina';
+$string['invalidstudent'] = 'Estudante inválido ou ID não encontrado.';
+$string['invalidcourse'] = 'Curso inválido ou ID não encontrado.';
+$string['candidatekeynotfound'] = 'Chave de candidato não encontrada.';
+$string['academickeynotfound'] = 'Chave de disciplina não encontrada.';
+$string['enrollfailed'] = 'Falha ao inscrever o estudante na disciplina.';
+$string['pluginname'] = 'Prova Fácil Sync';
+$string['inscription'] = 'Inscrição de Estudantes';
+$string['select_category'] = 'Selecione uma categoria';
+$string['select_course'] = 'Selecione uma disciplina';
+$string['select_students'] = 'Selecionar Estudantes';
+$string['enroll'] = 'Inscrever na API';
+$string['success'] = 'Estudante {$a} inscrito com sucesso.';
+$string['error'] = 'Erro ao processar o estudante {$a}.';
