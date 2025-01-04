@@ -3,7 +3,7 @@ require_once(__DIR__ . '/../../config.php'); // Configuração principal do Mood
 require_once($CFG->libdir . '/filelib.php'); // Biblioteca do Moodle para curl
 
 $url = 'https://unisced.provafacilnaweb.com.br/unisced/api/v2/tm/candidate/';
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 $data = [
     'username' => 'ltamele1@isced.ac.mz',
