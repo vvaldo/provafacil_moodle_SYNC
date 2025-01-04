@@ -68,7 +68,7 @@ function send_to_provafacil($student) {
     require_once($CFG->libdir . '/filelib.php'); // Garante que a biblioteca 'curl' está carregada
 
     $url = 'https://unisced.provafacilnaweb.com.br/unisced/api/v2/tm/candidate/';
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+    $apitoken = '#apitoken';
 
     // Dados do estudante
     $data = [
