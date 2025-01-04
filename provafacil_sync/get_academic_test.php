@@ -1,5 +1,5 @@
 <?php
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a'; 
+$apitoken = '#apitoken'; 
 
 function api_get($url, $params = [], $apitoken) {
     $ch = curl_init();
