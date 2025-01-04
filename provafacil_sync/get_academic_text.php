@@ -1,6 +1,6 @@
 <?php
 // Definir o token da API
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a'; 
+$apitoken = '#apitoken'; 
 $urlacademic = 'https://unisced.provafacilnaweb.com.br/unisced/api/v1/str/rest/api/academic/';
 // Função para fazer requisições GET
 function api_get_academic($apitoken, $urlacademic, $params = []) {
