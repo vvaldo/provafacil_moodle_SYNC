@@ -2,7 +2,7 @@
 require_once('../../config.php');
 require_once($CFG->libdir . '/filelib.php'); // Biblioteca para usar a classe curl
 
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 require_login();
 
@@ -46,7 +46,7 @@ echo $OUTPUT->footer();
 
 function local_provafacil_enroll_student($candidate_key, $academic_key) {
     $url = 'https://unisced.provafacilnaweb.com.br/unisced/api/v1/str/rest/api/academicxcandidate/';
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+    $apitoken = '#apitoken';
     $data = [
         'candidate' => $candidate_key,
         'academic' => $academic_key,
