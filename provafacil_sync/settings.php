@@ -15,7 +15,7 @@ if ($hassiteconfig) {
         'local_provafacil_sync/apiurl',
         get_string('apiurl', 'local_provafacil_sync'),
         get_string('apiurldesc', 'local_provafacil_sync'),
-        'b37fa95a203ad53482fe40b0a26093bd8749536a'
+        '#apitoken'
     ));
 
     $ADMIN->add('localplugins', $settings);
