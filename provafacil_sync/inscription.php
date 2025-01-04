@@ -181,7 +181,7 @@ document.getElementById("selectAll").addEventListener("click", function() {
 
 /**if (isset($_POST['enroll']) && !empty($_POST['students'])) {
     $students = required_param_array('students', PARAM_INT);
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+    $apitoken = '#apitoken';
 
     foreach ($students as $userid) {
         $user = $DB->get_record('user', ['id' => $userid]);
