@@ -67,7 +67,7 @@ function local_provafacil_enroll_student($candidate_key, $academic_key, $apitoke
 $courseid = optional_param('courseid', 0, PARAM_INT);
 $categoryid = optional_param('categoryid', 0, PARAM_INT);
 $action = optional_param('action', '', PARAM_ALPHA);
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 $categories = $DB->get_records('course_categories', ['visible' => 1], 'name ASC');
 $selected_category = optional_param('categoryid', null, PARAM_INT);
