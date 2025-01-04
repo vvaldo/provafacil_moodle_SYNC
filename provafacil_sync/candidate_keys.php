@@ -6,7 +6,7 @@ require_login();
 global $PAGE, $OUTPUT, $DB;
 
 $courseid = required_param('courseid', PARAM_INT); // Curso selecionado
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 // Configuração da página.
 $PAGE->set_url('/local/provafacil_sync/candidate_keys.php', ['courseid' => $courseid]);
@@ -18,7 +18,7 @@ $PAGE->set_heading('Lista de Chaves dos Candidatos Inscritos');
 // Função para buscar chave de um candidato pela API usando o idnumber.
 function get_candidate_key_by_idnumber($idnumber, $apitoken) {
     $url = 'https://unisced.provafacilnaweb.com.br/unisced/api/v1/tm/rest/candidate/';
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';  // O token de autorização
+    $apitoken = '#apitoken';  // O token de autorização
 $headers = [
     'Authorization: Token ' . $apitoken,
     'Content-Type: application/json',
@@ -86,7 +86,7 @@ foreach ($students as $student) {
     echo '</tr>';
 }
 echo '</table>';
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';  // O token de autorização
+$apitoken = '#apitoken';  // O token de autorização
 $headers = [
     'Authorization: Token ' . $apitoken,
     'Content-Type: application/json',
