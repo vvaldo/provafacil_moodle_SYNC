@@ -8,9 +8,9 @@ global $DB, $PAGE, $OUTPUT;
 
 $courseid = optional_param('courseid', 0, PARAM_INT);
 $students = optional_param_array('students', [], PARAM_INT);
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 $urlacademic = 'https://unisced.provafacilnaweb.com.br/unisced/api/v1/str/rest/api/academic/';
-$apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+$apitoken = '#apitoken';
 
 $PAGE->set_url('/local/provafacil_sync/confirmation.php');
 $PAGE->set_context(context_system::instance());
@@ -120,7 +120,7 @@ echo '<table border="1"><tr><th>Estudante</th><th>email</th><th>Candidate Key</t
 foreach ($students as $userid) {
     $user = $DB->get_record('user', ['id' => $userid]);
     $course = $DB->get_record('course', ['id' => $courseid]);
-    $apitoken = 'b37fa95a203ad53482fe40b0a26093bd8749536a';
+    $apitoken = '#apitoken';
     // Obter `candidate_key` e `academic_key`
     $candidate_key = local_provafacil_get_key(
         'https://unisced.provafacilnaweb.com.br/unisced/api/v1/tm/rest/candidate/',
